@@ -9,16 +9,22 @@
 ### 2.查看基本配置
 * 查看pytorch的版本、cuda是否可用
 * 查看需要的工具版本
-![](https://note.youdao.com/yws/api/personal/file/WEB0294050bc7518b167128d0df6b37c228?method=download&shareKey=7b7b60484ef5920277f8e14c4a0a3676)
+```
+import torch
+print(torch.__version__)
+```
+```
+print(torch.cuda.is_available)
+```
 
 ### 3.挂载
 ##### 因为colab只是一个远程的、可以无偿给我们提供GPU支持的主机，而不是本地的存储支持。所以我们需要把我们要运行的代码（谷歌云盘）挂载到远程主机上。
 * 挂载远程主机
-* 这一步我们需要登录谷歌账号复制链接
 ![](https://note.youdao.com/yws/api/personal/file/WEBe3ce70c3b9132859e07f4502634074b4?method=download&shareKey=faa3850eb8dcd4d62617542ca0406768)
+* 这一步我们需要登录谷歌账号复制链接
 ![](https://note.youdao.com/yws/api/personal/file/WEB298e801d0a3acba2667fe7ba8c3e6b8c?method=download&shareKey=49b1dbf0ab5675af3b63016127b1f7db)
-*更改运行目录
-*因为程序的运行需要在相同的目录下才能相互使用和运行，所以需要把要运行的程序放到同一个目录下。在这一步最好都运行一次，有时候看着是在一个目录下，但事实上在不同的地方。
+* 更改运行目录
+* 因为程序的运行需要在相同的目录下才能相互使用和运行，所以需要把要运行的程序放到同一个目录下。在这一步最好都运行一次，有时候看着是在一个目录下，但事实上在不同的地方。
 ![](https://note.youdao.com/yws/api/personal/file/WEB4769a1f4d67bdd6fa62e8c71a896ccab?method=download&shareKey=adfef04bbd9d574cc7ac43aadc1674c7)
 ### 4.同级文件调用
 ##### 当我们在运行一个程序时，有时候需要调用模型模块儿来进行训练，我们只在谷歌云盘上更改后缀，单纯地把.ipynb文件更改成.py文件，从表面上看确实已经成为python文件了。但是事实上colab只能更改.ipynb文件的内容，所以更改后的文件仍然是.ipynb文件。
@@ -27,8 +33,12 @@
 ##### kaggle上有很多竞赛数据集，但是kaggle的GPU使用时间是有限的，但是colab没有时间限制。如果从本地上传就很慢，所以我们可以把kaggle上的数据集传到（下载）到colab上去使用。
 * 首先需要一个kaggle账号
 * 下载并更新kaggle 
-![](https://note.youdao.com/yws/api/personal/file/WEB3fda920f0e10b111103d60e8688d3719?method=download&shareKey=b5b9927cedba61bd52d83e5cd60eff46)
-![](https://note.youdao.com/yws/api/personal/file/WEB0ba30ef5fb5df75925ee92e5c307643b?method=download&shareKey=546fb0f616b51d1f35a6f78897cdc1c2)
+```
+!pip install kaggle
+```
+```
+!pip install --upgrade --force-reinstall --no-deps kaggle
+```
 * 进入kaggle，进入你的账号信息
 * 往下拖，在API的位置有个Create New API Token，点击后会自动下载一个json文件，打开会出现username和key信息。
 ![](https://img-blog.csdnimg.cn/20200419131732836.png)
