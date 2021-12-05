@@ -46,7 +46,7 @@ drive.mount("/content/drive)
 * 往下拖，在API的位置有个Create New API Token，点击后会自动下载一个json文件，打开会出现username和key信息。
 ![](https://img-blog.csdnimg.cn/20200419131732836.png)
 ![](https://note.youdao.com/yws/api/personal/file/WEBfb25bde78e6f9c3aef09e8e2a7d0fc9c?method=download&shareKey=e9d444d9a3d9d5829e7aa62b41b2a767)
-* 输入以下代码
+* 输入以下代码,把对应的username和key填入即可
 ```
 import json
 token = {"username":"xxxxx","key":"xxxxx"}
