@@ -20,7 +20,10 @@ print(torch.cuda.is_available)
 ### 3.挂载
 ##### 因为colab只是一个远程的、可以无偿给我们提供GPU支持的主机，而不是本地的存储支持。所以我们需要把我们要运行的代码（谷歌云盘）挂载到远程主机上。
 * 挂载远程主机
-![](https://note.youdao.com/yws/api/personal/file/WEBe3ce70c3b9132859e07f4502634074b4?method=download&shareKey=faa3850eb8dcd4d62617542ca0406768)
+```
+from google.colab import drive
+drive.mount("/content/drive)
+```
 * 这一步我们需要登录谷歌账号复制链接
 ![](https://note.youdao.com/yws/api/personal/file/WEB298e801d0a3acba2667fe7ba8c3e6b8c?method=download&shareKey=49b1dbf0ab5675af3b63016127b1f7db)
 * 更改运行目录
