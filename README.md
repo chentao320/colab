@@ -70,7 +70,7 @@ with open('/content/kaggle.json', 'w') as file:
 ![](https://note.youdao.com/yws/api/personal/file/WEBf34a4d51c6fa1e40b34b6ae821752509?method=download&shareKey=8100dc1c387dc1500f436a85f7c9a479)
 * 我这里找了个比较小的数据集，下载速度还可以。我还测试过一个大的数据集，下载速度差不多可以达到90MB/s
 ![](https://note.youdao.com/yws/api/personal/file/WEBb6313496d36d2da249e897fc00588881?method=download&shareKey=7c07a70f4b8cb8d1c6a30bee58324f97)
-### 模型测试【resnet101】+【CIFAR10】
+### 6.模型测试【resnet101】+【CIFAR10】
 * 使用GPU
 ![](https://note.youdao.com/yws/api/personal/file/WEB513ff4229077d747bf3e605c1fdd00b4?method=download&shareKey=41de0a54704bde7e2a37a9000ce1a3ea)
 ![](https://note.youdao.com/yws/api/personal/file/WEBec1bab9cceb85c16ce76ae81931b2465?method=download&shareKey=6eec973d892c8cece45aab04a4f77fe7)
